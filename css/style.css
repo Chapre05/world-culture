@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(199, 247, 220);
+  font-family: 'Merienda', cursive;
+}
+
+main {
+  padding: 20px;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 120px;
+}
+
+.menu-section {
+  padding: 20px;
+}
+
+.menu-section p {
+  padding: 20px;
+}
+
+.menu-section h3 {
+  font-size: 2em;
+  padding: 20px 20px 0 20px;
+}
+
+.menu-section.japan {
+  background-color: rgb(231, 61, 61);
+}
+
+.menu-section.japan h2 {
+  background-image: url(../images/country1/japan.jpg);
+}
+
+.menu-section.philippines {
+  background-color: rgb(81, 104, 235);
+}
+
+.menu-section.philippines h2 {
+  background-image: url(../images/country2/philippines.jpg);
+}
+
+.menu-section.usa {
+  background-color: rgb(253, 249, 19);
+}
+
+.menu-section.usa h2 {
+  background-image: url(../images/country3/usa.jpg);
+}
+
+.menu-section h2 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+  font-size: 120px;
+  background-size: cover;
+  background-attachment: fixed;
+  text-shadow: 0px 0px 15px #000;
+  color: #fff;
+}
+
+.menu-section .menu-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 960px) {
+  .menu-section h2 {
+    font-size: 90px;
+  }
+  .menu-section .menu-items {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  main h1 {
+    font-size: 90px;
+  }
+  .menu-section h2 {
+    font-size: 50px;
+  }
+  .menu-section .menu-items {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */
